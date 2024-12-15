@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student>
+    <record>
+        <Name>A</Name>
+        <marks>80</marks>
+    </record>
+    <record>
+        <Name>B</Name>
+        <marks>60</marks>
+    </record>
+    <record>
+        <Name>C</Name>
+        <marks>40</marks>
+    </record>
+    <record>
+        <Name>D</Name>
+        <marks>80</marks>
+    </record>
+</student>

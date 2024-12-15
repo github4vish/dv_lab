@@ -1,0 +1,6 @@
+Department,Patients,AgeGroup0to18,AgeGroup19to35,AgeGroup36to60,AgeGroup60Plus
+Cardiology,120,20,40,40,20
+Neurology,90,10,30,30,20
+Orthopedics,150,30,50,40,30
+Pediatrics,100,50,30,15,5
+Dermatology,80,10,20,30,20

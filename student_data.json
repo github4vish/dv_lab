@@ -1,0 +1,7 @@
+[
+    { "Course": "Math", "Students": 120 },
+    { "Course": "Science", "Students": 80 },
+    { "Course": "History", "Students": 100 },
+    { "Course": "Art", "Students": 60 },
+    { "Course": "Physical Education", "Students": 90 }
+]

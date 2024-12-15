@@ -1,0 +1,34 @@
+[
+    {
+        "Department": "Cardiology",
+        "Patients" : 120,
+        "AgeGroup0to18": 15,
+        "AgeGroup19to35": 25,
+        "AgeGroup36to60": 40,
+        "AgeGroup60Plus": 20
+    },
+    {
+        "Department": "Neurology",
+        "Patients" : 90,
+        "AgeGroup0to18": 10,
+        "AgeGroup19to35": 20,
+        "AgeGroup36to60": 30,
+        "AgeGroup60Plus": 15
+    },
+    {
+        "Department": "Orthopedics",
+        "Patients" : 150,
+        "AgeGroup0to18": 20,
+        "AgeGroup19to35": 30,
+        "AgeGroup36to60": 50,
+        "AgeGroup60Plus": 25
+    },
+    {
+        "Department": "Pediatrics",
+        "Patients" : 100,
+        "AgeGroup0to18": 35,
+        "AgeGroup19to35": 15,
+        "AgeGroup36to60": 10,
+        "AgeGroup60Plus": 5
+    }
+]

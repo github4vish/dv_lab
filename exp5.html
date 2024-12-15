@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Table and Bar Chart with DataTables</title>
+        
+    <!-- Custom JS -->
+    <script src="file_upload.js" defer></script>
+    <script src="data_table.js" defer></script>
+    <script src="bar_chart.js" defer></script>
+</head>
+<body>
+    <h1>Data Table and Bar Chart with DataTables</h1>
+    <input type="file" id="fileInput" onchange="fileUpload()" accept=".txt">
+    <table id="dataTable" class="display" style="width: 100%;"></table>
+    <canvas id="barChart" width="600" height="400" style="border:1px solid #000;"></canvas>
+</body>
+</html>

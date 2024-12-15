@@ -1,0 +1,10 @@
+[
+    { "Year": "2018", "Sales": 1000 },
+    { "Year": "2019", "Sales": 1170 },
+    { "Year": "2020", "Sales": 660 },
+    { "Year": "2021", "Sales": 1030 },
+    { "Product": "Product A", "Sales": 1000 },
+    { "Product": "Product B", "Sales": 1170 },
+    { "Product": "Product C", "Sales": 660 },
+    { "Product": "Product D", "Sales": 1030 }
+]
