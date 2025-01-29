@@ -1,10 +1,6 @@
 [
-    { "Year": "2018", "Sales": 1000 },
-    { "Year": "2019", "Sales": 1170 },
-    { "Year": "2020", "Sales": 660 },
-    { "Year": "2021", "Sales": 1030 },
-    { "Product": "Product A", "Sales": 1000 },
-    { "Product": "Product B", "Sales": 1170 },
-    { "Product": "Product C", "Sales": 660 },
-    { "Product": "Product D", "Sales": 1030 }
+    { "Year": "2018", "Sales": 1000, "Low": 900, "Open": 1000, "Close": 1100, "High": 1200 },
+    { "Year": "2019", "Sales": 1170, "Low": 1100, "Open": 1170, "Close": 1150, "High": 1250 },
+    { "Year": "2020", "Sales": 660, "Low": 600, "Open": 660, "Close": 700, "High": 800 },
+    { "Year": "2021", "Sales": 1030, "Low": 900, "Open": 1030, "Close": 1100, "High": 1200 }
 ]
