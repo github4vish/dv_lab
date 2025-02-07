@@ -1,6 +1,6 @@
 [
-    { "Year": "2018", "Sales": 1000, "Low": 900, "Open": 1000, "Close": 1100, "High": 1200 },
-    { "Year": "2019", "Sales": 1170, "Low": 1100, "Open": 1170, "Close": 1150, "High": 1250 },
-    { "Year": "2020", "Sales": 660, "Low": 600, "Open": 660, "Close": 700, "High": 800 },
-    { "Year": "2021", "Sales": 1030, "Low": 900, "Open": 1030, "Close": 1100, "High": 1200 }
+    { "Year": "2018", "Open": 1000, "Close": 1100, "High": 1200, "Low": 900 },
+    { "Year": "2019", "Open": 1170, "Close": 1150, "High": 1250, "Low": 1100 },
+    { "Year": "2020", "Open": 660, "Close": 700, "High": 800, "Low": 600 },
+    { "Year": "2021", "Open": 1030, "Close": 1100, "High": 1200, "Low": 900 }
 ]
