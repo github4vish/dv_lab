@@ -1,8 +1,6 @@
 google.charts.load('current', { packages: ['corechart'] });
-google.charts.setOnLoadCallback(drawAreaChart);
-
-function drawAreaChart() {
-    fetch('market_analysis_data.json')
+google.charts.setOnLoadCallback(()=>{
+        fetch('market_analysis_data.json')
         .then(response => response.json())
         .then(data => {
             const chartData = new google.visualization.DataTable();
@@ -17,11 +15,9 @@ function drawAreaChart() {
                 vAxis: { title: 'Value', gridlines: { count: 6 } },
                 legend: { position: 'top' },
                 areaOpacity: 0.4,
-                chartArea: { width: '75%', height: '70%' },
-                colors: ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728']
+                chartArea: { width: '75%', height: '70%' }
             };
 
             new google.visualization.AreaChart(document.getElementById('areaChart')).draw(chartData, options);
         })
-        .catch(error => console.error('Error loading JSON data:', error));
-}
+});

@@ -1,7 +1,5 @@
 google.charts.load('current', { packages: ['corechart'] });
-google.charts.setOnLoadCallback(drawCandleChart);
-
-function drawCandleChart() {
+google.charts.setOnLoadCallback(()=>{
     fetch('market_analysis_data.json')
         .then(response => response.json())
         .then(data => {
@@ -16,11 +14,9 @@ function drawCandleChart() {
                 hAxis: { title: 'Year' },
                 vAxis: { title: 'Value', gridlines: { count: 6 } },
                 legend: 'none',
-                chartArea: { width: '75%', height: '70%' },
-                colors: ['#2ca02c']
+                chartArea: { width: '75%', height: '70%' }
             };
 
             new google.visualization.CandlestickChart(document.getElementById('candleChart')).draw(chartData, options);
-        })
-        .catch(error => console.error('Error loading JSON data:', error));
-}
+        })     
+});
