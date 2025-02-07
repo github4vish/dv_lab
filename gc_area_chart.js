@@ -2,7 +2,7 @@ google.charts.load('current', { packages: ['corechart'] });
 google.charts.setOnLoadCallback(drawAreaChart);
 
 function drawAreaChart() {
-    fetch('data.json')
+    fetch('market_analysis_data.json')
         .then(response => response.json())
         .then(data => {
             const chartData = new google.visualization.DataTable();
