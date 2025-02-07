@@ -1,32 +1,26 @@
-// Load the Google Charts library
 google.charts.load('current', { packages: ['corechart'] });
-google.charts.setOnLoadCallback(() =>  {
-    fetch('market_analysis_data.json')
-.then(response => response.json())
-.then(data => {
-    const chartData = new google.visualization.DataTable();
-    chartData.addColumn('string', 'Year');
-    chartData.addColumn('number', 'Low');
-    chartData.addColumn('number', 'Open');
-    chartData.addColumn('number', 'Close');
-    chartData.addColumn('number', 'High');
+google.charts.setOnLoadCallback(drawCandleChart);
 
-    // Add rows dynamically
-    data.forEach(item => {
-        chartData.addRow([item.Year, item.Low, item.Open, item.Close, item.High]);
-    });
+function drawCandleChart() {
+    fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+            const chartData = new google.visualization.DataTable();
+            chartData.addColumn('string', 'Year');
+            ['Low', 'Open', 'Close', 'High'].forEach(label => chartData.addColumn('number', label));
 
-    const options = {
-        title: 'Sales Data (Candle Chart)',
-        legend: 'none',
-        candlestick: {
-            fallingColor: { strokeWidth: 0, fill: '#a52714' }, // Red for downward trend
-            risingColor: { strokeWidth: 0, fill: '#0f9d58' } // Green for upward trend
-        }
-    };
+            data.forEach(item => chartData.addRow([item.Year, item.Low, item.Open, item.Close, item.High]));
 
-    const chart = new google.visualization.CandlestickChart(document.getElementById('candleChart'));
-    chart.draw(chartData, options);
-})
-.catch(error => console.error('Error loading JSON data:', error));   
-});
+            const options = {
+                title: 'Sales Data (Candle Chart)',
+                hAxis: { title: 'Year' },
+                vAxis: { title: 'Value', gridlines: { count: 6 } },
+                legend: 'none',
+                chartArea: { width: '75%', height: '70%' },
+                colors: ['#2ca02c']
+            };
+
+            new google.visualization.CandlestickChart(document.getElementById('candleChart')).draw(chartData, options);
+        })
+        .catch(error => console.error('Error loading JSON data:', error));
+}
