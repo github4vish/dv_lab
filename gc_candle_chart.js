@@ -2,7 +2,7 @@ google.charts.load('current', { packages: ['corechart'] });
 google.charts.setOnLoadCallback(drawCandleChart);
 
 function drawCandleChart() {
-    fetch('data.json')
+    fetch('market_analysis_data.json')
         .then(response => response.json())
         .then(data => {
             const chartData = new google.visualization.DataTable();
